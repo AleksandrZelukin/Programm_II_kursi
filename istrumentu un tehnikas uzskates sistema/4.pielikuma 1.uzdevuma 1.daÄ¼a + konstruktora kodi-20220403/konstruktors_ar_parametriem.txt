@@ -1,0 +1,35 @@
+class Trissturis:
+    pirma_mala = 0
+    otra_mala = 0
+    tresa_mala = 0
+    perimetrs = 0
+    
+	#konstruktors ar parametriem, 
+	#uzskatei atstāts tā, ka pirmo un otro malu veido kā parametrus, 
+	#trešo atstāj pēc noklusējuma vienmēr 6
+    def __init__(self, p_mala, o_mala):
+        self.pirma_mala = p_mala
+        self.otra_mala = o_mala
+        self.tresa_mala = 6
+
+    #klases metode (jeb funkcija) izdrukāt malas un perimetru
+    def drukat_Par_Trissturi(self):
+        #str() pārvērš skaitli par teksta rindu
+        print("Pirmā mala  = " + str(self.pirma_mala))
+        print("Otrā mala  = " + str(self.otra_mala))
+        print("Trešā mala  = " + str(self.tresa_mala))
+        print("Perimetrs  = " + str(self.perimetrs))
+	
+	#klases metode (jeb funkcija), klases metodēm padod parametru self	
+    def perimetrs(self):
+        self.perimetrs = self.pirma_mala + self.otra_mala + self.tresa_mala
+
+# veido klases objektu ar argumentiem, 
+# veidojot izsauks konstruktoru ar parametriem
+obj1 = Trissturis(5, 4)
+# izrēķina perimetru objektam obj1
+obj1.perimetrs()
+# izsauc perimetra drukāšanas metodi objektam obj1
+obj1.drukat_Par_Trissturi()
+
+
