@@ -26,9 +26,9 @@ win['bg'] = '#7C51A0'
 win.title('Laikapstākļi')
 win.wm_attributes('-alpha', 0.9)
 frame1 = tk.Frame(win, bg = 'orange')
-frame1.place(relx=0.15, rely=0.15, relwidth = 0.7, relheight=0.40)
+frame1.place(relx=0.15, rely=0.15, relwidth = 0.7, relheight=0.20)
 frame2 = tk.Frame(win, bg = 'orange')
-frame2.place(relx=0.15, rely=0.7, relwidth = 0.7, relheight=0.10)
+frame2.place(relx=0.15, rely=0.55, relwidth = 0.7, relheight=0.10)
 cityInput = tk.Entry(frame1, bg='white')
 cityInput.pack()
 btn = tk.Button(frame1, text='Skatīties laikapstākļus', bg='yellow', command=get_weather)
@@ -36,3 +36,6 @@ btn.pack()
 title1 = tk.Label(frame2, text='Laikapstaklu informacija', bg = 'orange')
 title1.pack()
 win.mainloop()
+
+
+
