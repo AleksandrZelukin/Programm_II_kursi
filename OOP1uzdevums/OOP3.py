@@ -4,11 +4,12 @@ class Figura:
         self.nosaukums = nosaukums
 
     def drukatMaluSkaitu(self):
+        print ("Malu skaits "+"{}".format(self.malas))
         print ("Malu skaits "+f"{self.malas}")
-
+        
     def drukaNosaukumu(self):
         print ("Figuras nosaukums "+f"{self.nosaukums}")
-
+        
 
 class Trijsturis(Figura):
     def drukatInfo(self):
